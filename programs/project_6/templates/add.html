@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add record</title>
+</head>
+<body>
+    <h1>Add a New student record</h1>
+    <form method="post">
+        <label for="student_id">student_id:</label>
+        <input type="number" id="student_id" name="student_id" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <input type="submit" value="Add student record">
+    </form>
+    <a href="{{ url_for('main.index') }}">Back to student record</a>
+</body>
+</html>

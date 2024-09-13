@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    <a href="{{ url_for('main.add') }}">Add New Book</a>
+    <ul>
+    {% for book in books %}
+        <li>
+            <h2>{{ book['title'] }}</h2>
+            <p>{{ book['author'] }}</p>
+            <p>{{ book['publication_year'] }}</p>
+            <a href="{{ url_for('main.edit', id=book['id']) }}">Edit</a>
+            <form method="post" action="{{ url_for('main.delete', id=book['id']) }}">
+                <input type="submit" value="Delete">
+            </form>
+        </li>
+    {% endfor %}
+    </ul>
+    
+</body>
+</html>

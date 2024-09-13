@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Student record</h1>
+<a href="{{ url_for('main.add') }}">Add New record</a>
+<ul>
+{% for student in student %}
+    <li>{{ student['student_id'] }} and{{ student['name'] }} and{{ student['age'] }}
+        <a href="{{ url_for('main.edit', student_id=student['_id']|string) }}">Edit</a>
+        <a href="{{ url_for('main.delete', student_id=student['_id']|string) }}">Delete</a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}
