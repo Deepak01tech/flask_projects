@@ -1,0 +1,51 @@
+body,
+html {
+    height: 60%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+    width: 352px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.img {
+    max-width: auto;
+    max-height: auto;
+    object-fit: contain;
+    /* Ensures the image fits while maintaining aspect ratio */
+}
+
+/* Media Query for small screens (mobile devices) */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        /* Make the container responsive */
+        height: auto;
+        /* Allow the height to adjust based on content */
+        padding: 20px;
+        /* Reduce padding for small screens */
+    }
+}
+
+/* Media Query for medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        /* Slightly larger container for tablets */
+        height: auto;
+        /* Adjust height as needed */
+        padding: 30px;
+        /* Increase padding for larger screens */
+    }
+}
