@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>Update Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 375px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .back-arrow {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .upload-image {
+            width: 100%;
+            height: 200px;
+            background-color: #c4c4c4;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .upload-image i {
+            font-size: 24px;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="text"] {
+            height: 20px;
+        }
+
+        .form-group textarea {
+            height: 60px;
+        }
+
+        .update-button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .update-button button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="back-arrow">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="upload-image">
+            <span>Upload Image</span>
+            <i class="fas fa-upload"></i>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date" placeholder="..........">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Enter Description:"></textarea>
+        </div>
+        <div class="update-button">
+            <button>Update</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+
+</html>

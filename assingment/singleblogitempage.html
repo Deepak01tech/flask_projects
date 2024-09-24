@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <title>
+        Crime Scene
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 375px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header i {
+            font-size: 24px;
+        }
+
+        .header .profile-pic {
+            width: 40px;
+            height: 40px;
+            background-color: #d3d3d3;
+            border-radius: 50%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .date {
+            text-align: right;
+            font-size: 12px;
+            color: #888888;
+            margin-top: 5px;
+        }
+
+        .description {
+            width: 100%;
+            height: 150px;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #d3d3d3;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #888888;
+            resize: none;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            width: 48%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons .edit {
+            background-color: #d3d3d3;
+        }
+
+        .buttons .delete {
+            background-color: #d3d3d3;
+        }
+
+        .share {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .share i {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-arrow-left">
+            </i>
+            <div class="profile-pic">
+            </div>
+        </div>
+        <div class="title">
+            Crime Scene In New Yourk
+        </div>
+        <div class="image-container">
+            <img alt="A person lying on the ground in a crime scene" height="200"
+                src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-uhNBKIzzMnQg05gsM2q6RbIB.png?st=2024-09-23T10%3A39%3A18Z&amp;se=2024-09-23T12%3A39%3A18Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-22T23%3A51%3A47Z&amp;ske=2024-09-23T23%3A51%3A47Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Gz0R2ZWTP%2BTGY9CWtChk6kbWvhfd5uaEeetfVYYhimA%3D"
+                width="300" />
+        </div>
+        <div class="date">
+            12 March 2021
+        </div>
+        <textarea class="description" placeholder="Description:"></textarea>
+        <div class="buttons">
+            <button class="edit">
+                Edit
+            </button>
+            <button class="delete">
+                Delete
+            </button>
+        </div>
+        <div class="share">
+            <i class="fas fa-share-alt">
+            </i>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,13 +1,117 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/blogitempage.css">
-</head>
-<body>
-<div class="blogcontainer"></div>
+<html>
 
+<head>
+    <title>Blog Item Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 360px;
+            height: 640px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .menu-icon,
+        .profile-icon {
+            background-color: #d3d3d3;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .blog-item {
+            background-color: #d3d3d3;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            height: 70px;
+
+        }
+
+        .blog-item h2 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer i {
+            font-size: 24px;
+        }
+
+        .add-button {
+            background-color: #333333;
+            color: #ffffff;
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 24px;
+            position: relative;
+            top: -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="profile-icon"></div>
+        </div>
+        <div class="blog-item">
+            <h2>Blog</h2>
+        </div>
+        <div class="blog-item">
+            <h2>Blog</h2>
+        </div>
+        <div class="blog-item">
+            <h2>Blog</h2>
+        </div>
+        <div class="blog-item">
+            <h2>Blog</h2>
+        </div>
+        <div class="footer">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-search"></i>
+            <div class="add-button">
+                <i class="fas fa-plus"></i>
+            </div>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </div>
 </body>
-<script src="./script/blogitempage.html"></script>
+
 </html>
