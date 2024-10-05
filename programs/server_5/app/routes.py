@@ -19,15 +19,23 @@ def signup():
     return jsonify({"message": "User created successfully"}), 201
     # return jsonify(data)
 
+# @main.route('/login', methods=['POST'])
+# def login():
+#     data = request.get_json()
+#     user = User.get_user_by_email(data['email'])
+#     # if user and bcrypt.check_password_hash(user.password, data['password']):
+#     #     access_token = generate_token(user)
+#     #     return jsonify({"access_token": access_token}), 200
+#     # return jsonify({"error": "Invalid email or password"}), 401
+#     return jsonify(user)
 @main.route('/login', methods=['POST'])
 def login():
-    data = request.get_json()
+    data = request.json
     user = User.get_user_by_email(data['email'])
-    # if user and bcrypt.check_password_hash(user.password, data['password']):
-    #     access_token = generate_token(user)
-    #     return jsonify({"access_token": access_token}), 200
-    # return jsonify({"error": "Invalid email or password"}), 401
-    return jsonify(user)
+    if user and bcrypt.check_password_hash(user.password, data['password']):
+        token = generate_token(user)
+        return jsonify({'token': token}), 200
+    return jsonify({"error": "Invalid credentials"}), 401
 
 
 @main.route('/blogs', methods=['GET'])
