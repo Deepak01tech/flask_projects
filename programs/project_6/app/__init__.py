@@ -1,8 +1,6 @@
 from flask import Flask
 from .models import initialize_db
-from flask_bcrypt import bcrypt
-
-# bcrypt = Bcrypt()
+from flask_bcrypt import Bcrypt  # Correct import
 
 def create_app():
     app = Flask(__name__, template_folder='../templates')
@@ -14,13 +12,13 @@ def create_app():
     initialize_db(app)
 
     # Initialize bcrypt for password hashing
-    bcrypt.init_app(app)
+    bcrypt = Bcrypt(app)  # Create an instance of Bcrypt with your app
 
     # Import and register blueprints
     from .routes import main
     from .auth import auth
 
     app.register_blueprint(main)
-    # app.register_blueprint(auth, url_prefix='/auth')
+    app.register_blueprint(auth, url_prefix='/auth')
 
     return app
