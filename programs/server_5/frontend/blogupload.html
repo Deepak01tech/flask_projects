@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Blog Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .upload-image {
+            width: 100%;
+            height: 150px;
+            background-color: #d3d3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .upload-image i {
+            font-size: 24px;
+            color: #888;
+        }
+        .upload-image span {
+            position: absolute;
+            bottom: 10px;
+            font-size: 14px;
+            color: #888;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-group textarea {
+            height: 60px;
+        }
+        .upload-button {
+            display: flex;
+            justify-content: center;
+        }
+        .upload-button button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-arrow-left"></i>
+            <h1>blog Upload</h1>
+        </div>
+        <div class="upload-image">
+            <i class="fas fa-upload"></i>
+            <span>Upload Image</span>
+        </div>
+        <div class="form-group">
+            <label for="post-title">Post Title:</label>
+            <input type="text" id="post-title" placeholder="..........">
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="text" id="date" placeholder="..........">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" placeholder="Enter Description:"></textarea>
+        </div>
+        <div class="upload-button">
+            <button>Upload post</button>
+        </div>
+    </div>
+</body>
+</html>

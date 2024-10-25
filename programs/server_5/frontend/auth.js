@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const data = await response.json();
         if (response.ok) {
             localStorage.setItem("token", data.token);
-            window.location.href = "index.html";
+            window.location.href = "blogitempage.html";
         } else {
             alert("wrong credential");
         }
